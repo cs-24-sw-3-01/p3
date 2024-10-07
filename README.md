@@ -1,9 +1,18 @@
-# P3 - E24
+# KMD Vacationplanner
 
-### TO COMPILE LOCALLY
+## Running NextJS
+First navigate into the `frontend` folder. Then run the following:
+```Bash
+npm run dev
+```
 
-`javac Main.java`
-
-### TO RUN LOCALLY
-
-`java Main`
+## Running Spring Boot
+First navigate into the `backend` folder. Then run the following:
+### MacOS
+```Bash
+./gradlew bootRun
+```
+### Windows
+```Bash
+.\gradlew.bat bootRun
+```
