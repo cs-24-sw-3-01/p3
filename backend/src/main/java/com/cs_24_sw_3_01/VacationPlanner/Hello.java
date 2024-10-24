@@ -1,4 +1,3 @@
-
 package com.cs_24_sw_3_01.VacationPlanner;
 
 import org.springframework.web.bind.annotation.GetMapping;
