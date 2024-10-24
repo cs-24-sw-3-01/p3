@@ -1,9 +1,9 @@
 # KMD Vacationplanner
 
-## Running NextJS
+## Running SvelteKit
 First navigate into the `frontend` folder. Then run the following:
 ```Bash
-npm run dev
+bun run dev -- --open`
 ```
 
 ## Running Spring Boot
