@@ -2,9 +2,8 @@
 ---
 title: Role Hierarchy
 ---
-stateDiagram-v2
-    direction BT
-
-    Admin --> Member
-    Member --> Employee
+classDiagram
+Employee "1..*" o-- "1" Role 
+Role <|-- Member
+Role <|-- Admin
 ```
