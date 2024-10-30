@@ -1,26 +1,32 @@
 @startuml component_diagram
 top to bottom direction
+hide empty methods
+hide empty members
 
 package "<<Component>> \n Interface" {
     package "<<Component>> \n System interface"{
-        class Employee {
-
-        }
+     class Calendar {}
 
     }
     package "<<Component>> \n User interface"{
-        class Employee {
-
-        }
+       
 
     }
 
 }
 
 package "<<Component>> \n Function" {
+    class Absence {}
+    
 
 }
 package "<<Component>> \n Model" {
+    class Employee {}
+
+    class Member {}
+
+    class Admin {}
+
 
 }
 
@@ -28,7 +34,7 @@ package "<<Component>> \n Technical platform"{
     package "<<Component>> \n Database system"{
 
     }
-    
+
     package "<<Component>> \n User-interface system"{
 
     }
