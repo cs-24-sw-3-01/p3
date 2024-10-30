@@ -1,0 +1,73 @@
+@startuml admin_statechart_diagram
+top to bottom direction
+
+Team -- Employee
+Team -- Calendar
+
+Employee -- Calendar
+Employee -- Absence
+
+Calendar --o "1..*" Holiday
+Calendar --o "1..*" Absence
+Calendar -- Display
+
+Absence -- AbsenceType
+
+Holiday -- HolidayType
+
+
+
+class Team {
+    members : Employee[]
+    admins : Employee[]
+
+    addMember(user: Employee)
+    removeMember(user: Employee)
+    addAdmin(user: Employee)
+    removeAdmin(user: Employee)
+}
+
+class Employee {
+    first_name : String
+    last_name : String
+    role : String
+    current_calendar_view : Calendar
+}
+
+class Calendar {
+    owner : Employee || Team
+    time_zone : String
+    display_mode : Display
+}
+
+class Holiday {
+    title : String
+    holiday : HolidayType
+    start_date : Date
+    end_date : Date
+}
+
+class Absence {
+    note : String
+    absent : AbsentType
+    state_date : Date
+    end_date : Date
+}
+
+enum HolidayType {
+    POLISH_HOLIDAY
+    DANISH_HOLIDAY
+}
+
+enum Display {
+    DAY
+    WEEK
+    MONTH
+}
+
+enum AbsenceType {
+    SICK
+    ABSENT
+}
+
+@enduml

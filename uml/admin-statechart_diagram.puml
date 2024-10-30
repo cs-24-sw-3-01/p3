@@ -1,4 +1,4 @@
-@startuml test
+@startuml admin_statechart_diagram
 left to right direction
 
 [*] --> Admin : Assigned admin
