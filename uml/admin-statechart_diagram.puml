@@ -1,0 +1,16 @@
+@startuml test
+left to right direction
+
+[*] --> Admin : Assigned admin
+
+state Admin 
+
+Admin : //add member//
+Admin: //remove member//
+Admin: //change team name//
+Admin: //delete other team//
+Admin: //assign other to admin//
+
+Admin --> [*] : Revoked Admin
+
+@enduml
