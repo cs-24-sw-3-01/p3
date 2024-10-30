@@ -5,19 +5,20 @@ hide empty members
 
 package "<<Component>> \n Interface" {
     package "<<Component>> \n System interface"{
-     class Calendar {}
-
+        class SAP {}
     }
     package "<<Component>> \n User interface"{
-       
+        class Calendar {}
 
     }
 
 }
 
+
+
 package "<<Component>> \n Function" {
     class Absence {}
-    
+
 
 }
 package "<<Component>> \n Model" {
