@@ -1,0 +1,34 @@
+@startuml component_diagram
+top to bottom direction
+
+package " <<Component>> \n Interface" {
+    package "<<Component>> \n User Interface"{
+
+    }
+    package "<<Component>> \n System interface"{
+
+    }
+
+
+}
+package "<<Component>> \n Function"{
+
+}
+package "<<Component>> \n Model"{
+
+}
+
+package "<<Component>> \n Technical platform"{
+    package "<<Component>> \n User-interface system"{
+
+    }
+
+
+}
+
+
+
+
+
+
+@enduml
