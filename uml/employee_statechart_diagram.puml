@@ -1,0 +1,23 @@
+@startuml employee_statechart_diagram
+left to right direction
+hide empty description
+
+[*] --> Employee : Account Created
+
+state Employee {
+    [*] --> Member : Employee assigned to Member
+    [*] --> Admin : Employee assigned to Admin
+}
+
+Member -left-> Admin
+Admin -right-> Member 
+
+
+
+Employee --> [*] : Account closed
+
+
+
+
+
+@enduml

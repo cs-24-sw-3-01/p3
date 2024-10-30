@@ -1,4 +1,4 @@
-@startuml test
+@startuml transistions_between_states
 left to right direction
 hide empty description
 

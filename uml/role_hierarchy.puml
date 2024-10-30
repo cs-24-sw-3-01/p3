@@ -1,0 +1,20 @@
+@startuml role_hierarchy
+top to bottom direction
+
+Admin -up-> Member
+
+Member -up-> Employee
+
+class Employee {
+
+}
+
+class Member {
+
+}
+
+class Admin {
+
+}
+
+@enduml
