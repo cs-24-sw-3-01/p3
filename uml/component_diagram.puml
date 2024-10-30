@@ -1,33 +1,58 @@
 @startuml component_diagram
 top to bottom direction
 
-package " <<Component>> \n Interface" {
-    package "<<Component>> \n User Interface"{
-
-    }
+package "<<Component>> \n Interface" {
     package "<<Component>> \n System interface"{
+        class Employee {
+
+        }
+
+    }
+    package "<<Component>> \n User interface"{
+        class Employee {
+
+        }
 
     }
 
+}
+
+package "<<Component>> \n Function" {
 
 }
-package "<<Component>> \n Function"{
-
-}
-package "<<Component>> \n Model"{
+package "<<Component>> \n Model" {
 
 }
 
 package "<<Component>> \n Technical platform"{
+    package "<<Component>> \n Database system"{
+
+    }
+    
     package "<<Component>> \n User-interface system"{
 
     }
 
+    package "<<Component>> \n Network system"{
+
+    }
+
+
+
 
 }
 
+"<<Component>> \n Model" --> "<<Component>> \n Database system"
+"<<Component>> \n System interface" --> "<<Component>> \n Function"
+"<<Component>> \n System interface" --> "<<Component>> \n Network system"
+
+"<<Component>> \n User interface" --> "<<Component>> \n User-interface system"
+"<<Component>> \n User interface" --> "<<Component>> \n Function"
 
 
+"<<Component>> \n Interface" --> "<<Component>> \n Function"
+
+"<<Component>> \n Function" --> "<<Component>> \n Model"
 
 
 
