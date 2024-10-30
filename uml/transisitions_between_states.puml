@@ -1,0 +1,18 @@
+@startuml test
+left to right direction
+hide empty description
+
+state Employee
+state Member
+state Admin
+
+Employee --> Member
+Member --> Employee
+
+Member --> Admin
+Admin --> Member
+
+Employee --> Admin
+Admin --> Employee
+
+@enduml
